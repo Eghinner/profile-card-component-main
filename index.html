@@ -5,31 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; position: absolute; bottom: 0; right: 40%; font-size: 10px;}
     .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
   </style>
 </head>
 <body>
-  Victor Crest
-  26
-  London
+  <img class="top" src="images/bg-pattern-top.svg" alt="top">
+  <img class="bottom" src="images/bg-pattern-bottom.svg" alt="bottom">
+  <div class="container">
+    <img class="pattern" src="images/bg-pattern-card.svg" alt="card">
+    <div class="card">
+      <img class="victor" src="images/image-victor.jpg" alt="victor">
+      <div class="line_1">
+        <h2>Victor Crest</h2>
+        <div class="26">26</div>
+      </div>
+      <div class="line_2">
+        London
+      </div>
+      <div class="line_3">
+        <div class="item1">
+          <p>80K</p>
+          <span>Followers</span>
+        </div>
+        <div class="item2">
+          <p>803K</p>
+          <span>Likes</span>
+        </div>
+        <div class="item3">
+          <p>1.4K</p>
+          <span>Photos</span>
+        </div>        
+      </div>
+    </div>
+  </div>
 
-  80K
-  Followers
 
-  803K
-  Likes
 
-  1.4K
-  Photos
+
+
+
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/Eghinner" target="_blank">Eghinner</a>.
   </div>
+
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
 </body>
 </html>
